@@ -1,0 +1,39 @@
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python package files
+*.egg-info/
+dist/
+build/
+
+# Logs and temporary files
+logs/
+*.log
+*.out
+*.err
+*.bak
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Test coverage reports
+htmlcov/
+.coverage
+*.cover
+
+# Git specific files
+.git/
