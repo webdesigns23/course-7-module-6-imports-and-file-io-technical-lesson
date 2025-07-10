@@ -2,6 +2,7 @@
 
 import argparse
 # TODO: Import log_action and search_logs from logger module
+from logger import log_action, search_logs
 
 def main():
     parser = argparse.ArgumentParser(description="User Log Management CLI")
@@ -18,7 +19,15 @@ def main():
     args = parser.parse_args()
 
     # TODO: Route commands to appropriate logger function based on args.command
-    pass
+    if args.command == "log":
+        log_action(args.action)
+    # Call log_action function with the appropriate argument
+    elif args.command == "search":
+        search_logs(args.keyword)
+    # Call search_logs function with the appropriate argument
+    else:
+        parser.print_help()
+
 
 if __name__ == "__main__":
     main()
